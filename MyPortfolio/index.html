@@ -102,7 +102,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+      <img src="assets/img/Bg.jpg" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Muruganantham S</h2>
@@ -121,39 +121,52 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-          in iste officiis commodi quidem hic quas.</p>
+        <p>Provided below are the comprehensive details about my professional journey and expertise.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+            <img src="assets/img/Pro-pic.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <h2>UI/UX Designer &amp; Web Developer.</h2>
+            <h2>Automation Test Engineer</h2>
             <p class="fst-italic py-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua.
+              I am a dedicated QA Automation Tester with a passion for ensuring software quality and a strong background
+              in automated testing. I strive to deliver reliable and efficient test automation solutions.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>16 Dec 2000</span< /li>
+                      <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 8883972221</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Salem, India</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span id="age"></span></li>
+                  <script>
+                    function calculateAge(dob) {
+                      const birthDate = new Date(dob);
+                      const today = new Date();
+                      let age = today.getFullYear() - birthDate.getFullYear();
+                      const monthDifference = today.getMonth() - birthDate.getMonth();
+                      if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+                        age--;
+                      }
+                      return age;
+                    }
+
+                    document.getElementById('age').textContent = calculateAge('2000-12-16'); // Replace with actual DOB
+                  </script>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
+                    <span>murugananthams1612@gmail.com</span>
+                  </li>
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li> -->
                 </ul>
               </div>
             </div>
@@ -169,7 +182,7 @@
 
     </section><!-- /About Section -->
 
-    <!-- Stats Section -->
+    <!--//Stats Section 
     <section id="stats" class="stats section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -183,7 +196,7 @@
                 class="purecounter"></span>
               <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
             </div>
-          </div><!-- End Stats Item -->
+          </div>// End Stats Item
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
@@ -192,7 +205,7 @@
                 class="purecounter"></span>
               <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
             </div>
-          </div><!-- End Stats Item -->
+          </div> // End Stats Item
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
@@ -201,7 +214,7 @@
                 class="purecounter"></span>
               <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
             </div>
-          </div><!-- End Stats Item -->
+          </div> //End Stats Item 
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
@@ -210,22 +223,22 @@
                 class="purecounter"></span>
               <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
             </div>
-          </div><!-- End Stats Item -->
+          </div>  End Stats Item 
 
         </div>
 
       </div>
 
-    </section><!-- /Stats Section -->
-
-    <!-- Skills Section -->
+    </section> // /Stats Section 
+  -->
+    <!-- Skills Section 
     <section id="skills" class="skills section light-background">
 
-      <!-- Section Title -->
+      <-- Section Title --
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <p>Explore my skills below and discover my expertise.</p>
+      </div><-- End Section Title --
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -233,8 +246,102 @@
 
           <div class="col-lg-6">
 
+
             <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+              <span class="skill"><span>Java</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><-- End Skills Item --
+
+            <div class="progress">
+              <span class="skill"><span>JAVASCRIPT</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><-- End Skills Item --
+
+            <div class="progress">
+              <span class="skill"><span>SELENIUM</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><-- End Skills Item --
+
+            <div class="progress">
+              <span class="skill"><span>PLAYWRIGHT</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><-- End Skills Item --
+
+            <div class="progress">
+              <span class="skill"><span>WEBDRIVER-IO</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><-- End Skills Item --
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>POSTMAN</span> <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><-- End Skills Item --
+
+            <div class="progress">
+              <span class="skill"><span>AUTOIT</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><-- End Skills Item --
+
+            <div class="progress">
+              <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><-- End Skills Item --
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><-- /Skills Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Explore my skills below and discover my expertise.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Automation Testing -->
+        <div class="row skills-content skills-animation">
+          <div class="col-lg-12">
+            <h3>Automation Testing</h3>
+          </div>
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>SELENIUM</span> <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -242,27 +349,7 @@
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
+              <span class="skill"><span>PLAYWRIGHT</span> <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -270,13 +357,206 @@
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
+              <span class="skill"><span>WEBDRIVER-IO</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+          </div>
+        </div><!-- End Automation Testing -->
+
+        <!-- Programming Languages -->
+        <div class="row skills-content skills-animation">
+          <div class="col-lg-12">
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>Java</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JAVASCRIPT</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+          </div>
+        </div><!-- End Programming Languages -->
+
+        <!-- API Testing -->
+        <div class="row skills-content skills-animation">
+          <div class="col-lg-12">
+            <h3>API Testing</h3>
+          </div>
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>POSTMAN</span> <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+          </div>
+        </div><!-- End API Testing -->
+
+        <!-- Test Frameworks and Libraries -->
+        <div class="row skills-content skills-animation">
+          <div class="col-lg-12">
+            <h3>Test Frameworks and Libraries</h3>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>Cucumber BDD</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>TestNG</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Mocha</span> <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Chai</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+          </div>
+        </div><!-- End Test Frameworks and Libraries -->
+
+        <!-- Version Control -->
+        <div class="row skills-content skills-animation">
+          <div class="col-lg-12">
+            <h3>Version Control</h3>
+          </div>
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>Git</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Github</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+          </div>
+        </div><!-- End Version Control -->
+
+        <!-- Testing Types and Concepts -->
+        <div class="row skills-content skills-animation">
+          <div class="col-lg-12">
+            <h3>Testing Types and Concepts</h3>
+          </div>
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>Functional Testing</span> <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
             </div><!-- End Skills Item -->
 
+            <div class="progress">
+              <span class="skill"><span>Regression Testing</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Smoke Testing</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>UI Testing</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>E2E Testing</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>NON Functional Testing</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>API Testing</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+          </div>
+        </div><!-- End Testing Types and Concepts -->
+
+        <!-- Defect Management Tool -->
+        <div class="row skills-content skills-animation">
+          <div class="col-lg-12">
+            <h3>Defect Management Tool</h3>
+          </div>
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>JIRA</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+          </div>
+        </div><!-- End Defect Management Tool -->
+
+        <!-- Others -->
+        <div class="row skills-content skills-animation">
+          <div class="col-lg-12">
+            <h3>Others</h3>
+          </div>
+          <div class="col-lg-6">
             <div class="progress">
               <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
               <div class="progress-bar-wrap">
@@ -285,14 +565,19 @@
               </div>
             </div><!-- End Skills Item -->
 
+            <div class="progress">
+              <span class="skill"><span>AUTOIT</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
           </div>
-
-        </div>
+        </div><!-- End Others -->
 
       </div>
 
     </section><!-- /Skills Section -->
-
     <!-- Resume Section -->
     <section id="resume" class="resume section">
 
@@ -312,64 +597,75 @@
             <h3 class="resume-title">Sumary</h3>
 
             <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and
-                  developing user-centered digital/print marketing material from initial concept to final, polished
-                  deliverable.</em></p>
+              <h4>Muruganantham S</h4>
+              <p><em>As an Automation Test Engineer with over 2.6 years of experience, I specialize in both automation
+                  and manual testing, leveraging tools such as Selenium, Playwright, and WebDriverIO. </em></p>
+              <p>My technical skills in Java and JavaScript enable me to effectively build and execute diverse test
+                scripts, ensuring high-quality software through thorough functional, regression, and smoke testing.</p>
               <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
+                <li>Salem, Tamil Nadu</li>
+                <li>+91 8883972221</li>
+                <li>murugananthams1612@gmail.com</li>
               </ul>
             </div><!-- Edn Resume Item -->
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+              <h4>Electronics &amp; Communication Engineering</h4>
+              <h5>2018 - 2022</h5>
+              <p><em>Kongu Engineering College, Perundurai</em></p>
               <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui
                 ut dignissimos deleniti nerada porti sand markend</p>
             </div><!-- Edn Resume Item -->
 
-            <div class="resume-item">
+            <!--<div class="resume-item">
               <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
               <h5>2010 - 2014</h5>
               <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
               <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius
                 unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart
                 dila</p>
-            </div><!-- Edn Resume Item -->
+            </div>// Edn Resume Item
+          -->
 
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
+              <h4>Cognizant Technology Solutions</h4>
+              <h5>Programmar Analyst</h5>
+              <p><em>Project: Matrix Realist (August 2023 - present)</em></p>
               <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production
-                  communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the
-                  project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the
-                  design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                <li>Manual Testing: Conducted comprehensive manual testing, including smoke, regression, and API
+                  testing, to ensure quality across the application.</li>
+                <li>Automation Development: Developed automation scripts for new functionalities and maintained the
+                  project, transforming all modules into independent units, resulting in a 45% reduction in execution
+                  time.</li>
+                <li>Recognition: Awarded Best Performer for optimizing module independence and exploring new features
+                  and technologies for implementation in our project.
+                </li>
+                <li>Technical Tools: Utilized Java with Selenium in a project-level framework (UTAF), gaining hands-on
+                  experience with AutoIT, Postman, and TestNG.</li>
+                <li>AI Integration: Implemented GitHub Copilot to enhance code development and error resolution,
+                  providing a demo to showcase its value in streamlining our development and migration processes.</li>
               </ul>
             </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+              <!-- <h4>Graphic design specialist</h4> -->
+              <h5>Programmar Analyst Trainee</h5>
+
+              <p><em>Project: Phoenix Real-Estate Solutions (June 2022 - August 2023) </em></p>
               <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and
-                  advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                <li>Built Regression Scripts: Developed comprehensive regression scripts from scratch using WebDriverIO
+                  in Visual Studio, ensuring thorough test coverage.</li>
+                <li>Dynamic UI Interaction: Created methods to analyse DOM element tag names, enabling flexible and
+                  dynamic interaction with the UI based on specific attributes. </li>
+                <li>Streamlined Input Handling: Consolidated multiple XPath queries into a single, reusable method for
+                  various input options, improving efficiency and reducing complexity.</li>
+                <li>Improved Maintainability: Enhanced test suite maintainability by standardizing element interaction
+                  methods, simplifying updates and management of test cases.</li>
               </ul>
             </div><!-- Edn Resume Item -->
 
