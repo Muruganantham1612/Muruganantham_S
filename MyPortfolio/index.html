@@ -517,7 +517,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-        <p>As an Automation Test Engineer with over 2.8 years of experience, I have honed my skills in both automation
+        <p>As an Automation Test Engineer with over <span id="yearsOfExperience">2.8</span> years of experience, I have honed my skills in both automation
           and manual testing. My expertise includes working with tools such as Selenium, Playwright, and WebDriverIO,
           and I am proficient in Java and JavaScript. I am dedicated to ensuring high-quality software through thorough
           functional, regression, and smoke testing.</p>
@@ -528,11 +528,12 @@
         <div class="row">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
+            <h3 class="resume-title">Summary</h3>
 
             <div class="resume-item pb-0">
               <h4>Muruganantham S</h4>
-              <p><em>As an Automation Test Engineer with over 2.6 years of experience, I specialize in both automation
+              <p><em>As an Automation Test Engineer with over <span id="yearsOfExperience">2.8</span> years of
+                  experience, I specialize in both automation
                   and manual testing, leveraging tools such as Selenium, Playwright, and WebDriverIO. </em></p>
               <p>My technical skills in Java and JavaScript enable me to effectively build and execute diverse test
                 scripts, ensuring high-quality software through thorough functional, regression, and smoke testing.</p>
@@ -542,7 +543,21 @@
                 <li>murugananthams1612@gmail.com</li>
               </ul> -->
             </div><!-- Edn Resume Item -->
+            <script>
+              function calculateExperience(startDate) {
+                const start = new Date(startDate);
+                const today = new Date();
+                let experience = today.getFullYear() - start.getFullYear();
+                const monthDifference = today.getMonth() - start.getMonth();
+                if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < start.getDate())) {
+                  experience--;
+                }
+                const totalMonths = (experience * 12) + monthDifference;
+                return (totalMonths / 12).toFixed(1);
+              }
 
+              document.getElementById('yearsOfExperience').textContent = calculateExperience('2021-06-25');
+            </script>
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
               <h4>Electronics &amp; Communication Engineering</h4>
