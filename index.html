@@ -104,7 +104,7 @@
           <div class="col-lg-8 content">
             <h2>Automation Test Engineer</h2>
             <p class="fst-italic py-3" style="text-align: justify;">
-              As a dedicated Automation Test Engineer with over <span id="yearsOfExperience">2.8</span>
+              As a dedicated Automation Test Engineer with over <span id="yearsOfExperience">2.9</span>
               years of experience, I bring a deep commitment to ensuring the highest software
               quality. My expertise lies in designing and implementing efficient test automation frameworks that
               streamline testing processes and reduce manual effort. With a strong technical background, I focus on
@@ -465,16 +465,36 @@
               function calculateExperience(startDate) {
                 const start = new Date(startDate);
                 const today = new Date();
-                let experience = today.getFullYear() - start.getFullYear();
-                const monthDifference = today.getMonth() - start.getMonth();
-                if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < start.getDate())) {
-                  experience--;
+            
+                // Calculate the total number of years and months
+                let years = today.getFullYear() - start.getFullYear();
+                let months = today.getMonth() - start.getMonth();
+            
+                // Adjust if the current month is earlier than the start month
+                if (months < 0) {
+                  years--;
+                  months += 12;
                 }
-                const totalMonths = (experience * 12) + monthDifference;
-                return (totalMonths / 12).toFixed(1);
+            
+                // Adjust if the current day is earlier than the start day
+                if (today.getDate() < start.getDate()) {
+                  months--;
+                  if (months < 0) {
+                    years--;
+                    months += 12;
+                  }
+                }
+            
+                // Combine years and months with a dot in between
+                return `${years}.${months}`;
               }
-
-              document.getElementById('yearsOfExperience').textContent = calculateExperience('2021-06-25');
+            
+              // Example usage
+              const experience = calculateExperience('2022-06-25');
+              console.log(`Experience: ${experience}`); // Output: 2.9
+            
+              // Update the DOM element with the calculated experience
+              document.getElementById('yearsOfExperience').textContent = experience;
             </script>
 
             <div class="resume-item">
@@ -521,7 +541,7 @@
 
             <div class="resume-item">
               <h5>Programmar Analyst</h5>
-              <p><em>2nd Project (August 2023 - November 2024)</em></p>
+              <p><em>2nd Project (February 2023 - November 2024)</em></p>
               <ul style="text-align: justify;">
                 <li><strong>Manual Testing:</strong> Conducted comprehensive manual testing, including smoke,
                   regression, and API
@@ -550,7 +570,7 @@
               <!-- <h4>Graphic design specialist</h4> -->
               <h5>Programmar Analyst Trainee</h5>
 
-              <p><em>1st Project (June 2022 - August 2023) </em></p>
+              <p><em>1st Project (June 2022 - February 2023) </em></p>
               <ul style="text-align: justify;">
                 <li><strong>Built Regression Scripts:</strong> Developed comprehensive regression scripts from scratch
                   using WebDriverIO
