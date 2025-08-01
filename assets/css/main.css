@@ -1,3 +1,82 @@
+/* Progress Bar and Skill Text Color for Theme Modes */
+body.dark-mode .progress-bar {
+  background: linear-gradient(90deg, #bdc3c7 0%, #2c3e50 100%) !important;
+}
+body.dark-mode .skill,
+body.dark-mode .skill .val {
+  color: #e0e0e0 !important;
+}
+/* Progress Bar Color for Theme Modes */
+body.dark-mode .progress-bar {
+  background: linear-gradient(90deg, #bdc3c7 0%, #2c3e50 100%) !important;
+}
+/* --- EXCLUDE HERO CONTAINER FROM DARK MODE --- */
+
+/* Ensure hero intro text never changes in dark mode */
+body.dark-mode #hero .container h2,
+body.dark-mode #hero .container h2 *,
+body.dark-mode #hero .container .typed,
+body.dark-mode #hero .container .typed-cursor {
+  color: var(--heading-color) !important;
+  background: transparent !important;
+}
+body.dark-mode #hero .container p,
+body.dark-mode #hero .container p * {
+  color: var(--default-color) !important;
+  background: transparent !important;
+}
+/* --- DARK MODE CONTACT FORM CONTAINER --- */
+body.dark-mode .php-email-form {
+  background: #18191c !important;
+  color: #f1f1f1 !important;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px 0 #0002;
+  padding: 2rem 1rem;
+}
+/* --- DARK MODE CONTACT FORM --- */
+body.dark-mode .php-email-form .form-control,
+body.dark-mode .php-email-form input,
+body.dark-mode .php-email-form textarea {
+  background: #23242a !important;
+  color: #f1f1f1 !important;
+  border-color: #444 !important;
+}
+body.dark-mode .php-email-form label {
+  color: #e0e0e0 !important;
+}
+body.dark-mode .php-email-form .form-control::placeholder,
+body.dark-mode .php-email-form input::placeholder,
+body.dark-mode .php-email-form textarea::placeholder {
+  color: #bbb !important;
+}
+body.dark-mode .php-email-form button[type=submit] {
+  background: #007bff !important;
+  color: #fff !important;
+}
+body.dark-mode .php-email-form button[type=submit]:hover {
+  background: #0056b3 !important;
+}
+/* --- DARK MODE CONTACT INFO --- */
+body.dark-mode .contact-info-wrap {
+  background: #18191c !important;
+  color: #f1f1f1 !important;
+  border-radius: 12px;
+}
+body.dark-mode .contact-info-item {
+  background: transparent !important;
+  color: #f1f1f1 !important;
+  border-bottom: 1px solid #333 !important;
+}
+body.dark-mode .contact-info-item i {
+  color: #4caf50 !important;
+}
+body.dark-mode .contact-info-item h3 {
+  color: #fff !important;
+}
+body.dark-mode .contact-info-item p,
+body.dark-mode .contact-info-item a {
+  color: #e0e0e0 !important;
+}
 /**
 * Template Name: iPortfolio
 * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -1272,4 +1351,65 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/* --- DARK MODE OVERRIDES --- */
+body.dark-mode,
+body.dark-mode .light-background,
+body.dark-mode .section.light-background,
+body.dark-mode .container.section-title,
+body.dark-mode .footer.light-background {
+  background: #111215 !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode a,
+body.dark-mode .resume-title {
+  color: #fff !important;
+}
+
+body.dark-mode .progress-bar {
+  background-color: #4caf50 !important;
+}
+
+body.dark-mode .form-control,
+body.dark-mode input,
+body.dark-mode textarea {
+  background: #18191c !important;
+  color: #e0e0e0 !important;
+  border-color: #333 !important;
+}
+
+body.dark-mode .form-control::placeholder,
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #bbb !important;
+}
+
+body.dark-mode .php-email-form button[type=submit] {
+  background: #007bff !important;
+  color: #fff !important;
+}
+
+body.dark-mode .php-email-form button[type=submit]:hover {
+  background: #0056b3 !important;
+}
+
+body.dark-mode .section-title h2,
+body.dark-mode .section-title p {
+  color: #fff !important;
+}
+
+/* Do NOT override header or hero if already dark */
+body.dark-mode .header,
+body.dark-mode #hero,
+body.dark-mode .hero {
+  background: initial !important;
+  color: initial !important;
 }
