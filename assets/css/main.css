@@ -1,18 +1,34 @@
 /* --- Download Resume Button Styles --- */
 .download-btn-gradient {
-  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
   color: #fff !important;
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   font-weight: 600;
-  font-size: 1rem;
-  padding: 10px 28px;
+  font-size: 1.1rem;
+  padding: 12px 28px;
   display: inline-block;
-  box-shadow: 0 2px 8px rgba(67,233,123,0.15);
-  transition: background 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  text-align: center;
+  cursor: pointer;
 }
 .download-btn-gradient:hover {
-  background: linear-gradient(90deg, #38f9d7 0%, #43e97b 100%);
+  background: linear-gradient(90deg, #0056b3 0%, #007bff 100%);
+  color: #fff !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+/* Dark mode override for Download Resume button */
+body.dark-mode .download-btn-gradient {
+  background: linear-gradient(90deg, #28a745 0%, #007bff 100%);
+  color: #fff !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+body.dark-mode .download-btn-gradient:hover {
+  background: linear-gradient(90deg, #007bff 0%, #28a745 100%);
+  color: #fff !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.22);
 }
 
 .download-btn-outline {
